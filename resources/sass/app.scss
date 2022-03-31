@@ -1,0 +1,54 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Responsive bootstrap 4 typo
+@import 'myreboot';
+
+// Font-awesome
+@import '~font-awesome/scss/font-awesome';
+
+// Sweetalert2
+@import '~sweetalert2/dist/sweetalert2.css';
+
+// Toastr
+@import '~toastr/toastr';
+
+// DataTables
+@import '~datatables/media/css/jquery.dataTables.css';
+
+// NProgress
+@import '~axios-progress-bar/dist/nprogress.css';
+@import '~nprogress/nprogress.css';
+
+// Common styles
+@import 'common';
+
+// Dashboard styles
+@import './dashboard/style';
+
+// Animate.css
+@import '~animate.css/animate.css';
+
+// Site Responsive mobile first
+@import 'responsive';
+
+// Pages Ui
+// @import '../plugins/pace/pace-theme-flash.css';
+// @import '../plugins/jquery-scrollbar/jquery.scrollbar.css';
+// @import '../plugins/select2/css/select2.css';
+// @import '../plugins/switchery/css/switchery.css';
+// @import '../pages/css/pages-icons.css';
+// @import '../pages/css/themes/light.css';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

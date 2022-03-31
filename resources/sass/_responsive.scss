@@ -1,0 +1,232 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (portrait phones, 320px and up)
+@media (min-width: 320px) { 
+    // Body responsive styling
+    body {
+        color: $secondary !important;
+    }
+
+    // Site style 
+    #site {
+        // Navbar
+        #site-navbar {
+            .navbar-brand {
+                img {
+                    width: 130px;
+                }
+            }
+
+            .nav-headline {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .form-inline {
+                display: inline-block;
+            }
+        }
+
+        // Hero
+        .hero-text {
+            width: 80%;
+
+            .jumbotron-text {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        // Job Seeker Section
+        .job-seeker-section {
+            .nav-tabs-simple > li > a {
+                font-size: 11px;
+                padding: 10px;
+            }
+
+            .resume-holder {
+                p {
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+        }
+
+        // Services
+        .service-item {
+            padding: 50px;
+
+            h2 {
+                color: $white;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+
+    // Dashboard styling
+    #dashboard {
+        .header, .sidebar-header {
+            .brand {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    // Body responsive styling
+    body {
+        font-size: 14px !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    //Login
+    .login-wrapper .login-container {
+        height: 100vh;
+    }
+
+    // Body responsive styling
+    body {
+        font-size: 16px !important;
+    }
+
+    // Make form-container-50 80% with on medium devices
+    .form-container-50 {
+        width: 80%;
+    }
+
+    // Site style 
+    #site {
+        // Hero
+        .hero-text {
+            width: unset;
+        }
+
+        // Job Seeker Section
+        .job-seeker-section {
+            .nav-tabs-simple > li > a {
+                font-size: 13px;
+                padding: 13px 20px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // Visible starting on this screen
+    .hidden-md-down {
+        display: flex;
+    }
+
+    // Site style 
+    #site {
+        // Navbar
+        #site-navbar {
+            .navbar-brand {
+                img {
+                    width: 200px;
+                }
+            }
+
+            .nav-headline {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .form-inline {
+                display: inline-block;
+            }
+        }
+
+        // Hero
+        .hero-text {
+            .jumbotron-text {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        // Job Seeker Section
+        .job-seeker-section {
+            .resume-holder {
+                p {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    // Make form-container-50 50% with on medium devices
+    .form-container-50 {
+        width: 50%;
+    }
+
+    // Site style 
+    #site {
+        // Navbar
+        #site-navbar {
+            .navbar-brand {
+                img {
+                    width: unset;
+                }
+            }
+
+            .nav-headline {
+                font-size: 24px;
+            }
+        }
+
+        // Hero
+        .hero-text {
+            .jumbotron-text {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+
+        // Job Seeker Section
+        .job-seeker-section {
+            .resume-holder {
+                p {
+                    font-size: 28px;
+                    line-height: 34px;
+                    text-align: left;
+                }
+            }
+        }
+
+        // Services
+        .service-item {
+            padding: 120px 50px;
+
+            h2 {
+                font-weight: 500;
+            }
+        }
+    }
+
+    // Dashboard styling
+    #dashboard {
+        .header {
+            .brand {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

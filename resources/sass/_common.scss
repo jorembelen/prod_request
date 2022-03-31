@@ -1,0 +1,165 @@
+// Common Styling Here
+
+//black background with opacity
+.black-opac-holder {
+    padding: 10px 30px 16px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+// input, text-area {
+//     border-radius: 4px !important;
+// }
+
+// Button Custom Colors Overide
+.btn-primary {
+    background-color: $primary !important;
+}
+
+.btn-default {
+    background-color: $secondary !important;
+    color: $white !important;
+    border-color: rgba(87, 90, 93, 0.27) !important;
+}
+
+.btn-outline-white {
+    color: $white !important;
+    border-color: $white !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary {
+    color: $primary !important;
+    border-color: $primary !important;
+    background-color: transparent !important;
+
+    &:hover {
+        color: $white !important;
+        background-color: $primary !important;
+    }
+}
+
+// Background Colors
+.my-bg-primary {
+    background-color: $primary !important;
+    color: $white;
+}
+
+.my-bg-secondary {
+    background-color: $secondary !important;
+    color: $white;
+}
+
+// Text color
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+// UL with green icon
+.my-list {
+    ul {
+        list-style-image: url("/images/li-image.png");
+    }
+}
+
+// Fits image in background
+.bg-image-fit {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 300px;
+}
+
+// Align items center vertically
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+// make center horizontaly
+.make-center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Hidden from MD to lowest
+.hidden-md-down {
+    display: none;
+}
+
+// Job search results items in bg-white to make height the same
+.items-holder {
+    min-height: 51px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+// Image make width fit to div
+.image-fit-width {
+    width: 100%;
+}
+
+// Make input label not uppercase
+.form-group label {
+    text-transform: capitalize !important;
+
+    span {
+        color: $red;
+        font-size: 12px;
+    }
+}
+
+// Validate error message
+.help {
+    color: $red !important;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+// NProgress bar
+#nprogress {
+    .bar {
+        background-color: $primary !important;
+    }
+
+    .spinner-icon {
+        border-top-color: $primary !important;
+        border-left-color: $primary !important;
+    }
+}
+
+// make info-button disabled color white
+.btn-info:disabled {
+    color: $white;
+}
+
+// center image with 50% width
+.image-holder {
+    margin: auto;
+    width: 50%;
+}
+
+// Radio success change color
+.radio.radio-success input[type=radio]:checked + label:before {
+    border-color: $primary !important;
+}
+
+// Resize button width
+.w-200-button {
+    width: 200px;
+}
+
+// Form Container
+.form-container, .form-container-50 {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
