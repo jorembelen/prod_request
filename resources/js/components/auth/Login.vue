@@ -7,13 +7,13 @@
             <div class="alert alert-info mt-3 mb-0" role="alert" v-if="authInfo">{{ authInfo }}</div>
             <!-- End Error and Info messages -->
             <form @submit.prevent="authenticate('login-form')" class="p-t-15" data-vv-scope="login-form">
-                <div :class="{'form-group form-group-default': true, 'mb-0': errors.has('login-form.email') }">
+                <div :class="{'form-group form-group-default': true, 'mb-0': errors.has('login-form.username') }">
                     <label>Login <span>*</span></label>
                     <div class="controls">
-                        <input v-validate="'required'" class="form-control" type="text" name="usename" v-model="form.usename" placeholder="Email Address">
+                        <input v-validate="'required'" class="form-control" type="text" name="usename" v-model="form.usename" placeholder="username Address">
                     </div>
                 </div>
-                <span v-show="errors.has('login-form.email')" class="help is-danger">{{ errors.first('login-form.email') }}</span>
+                <span v-show="errors.has('login-form.username')" class="help is-danger">{{ errors.first('login-form.username') }}</span>
                 <div :class="{'form-group form-group-default': true, 'mb-0': errors.has('login-form.password') }">
                     <label>Password <span>*</span></label>
                     <div class="controls">
@@ -37,7 +37,7 @@
             return {
                 form: {
                     role: null,
-                    email: null,
+                    username: null,
                     password: null
                 }
             }
