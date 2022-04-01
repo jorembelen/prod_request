@@ -101,7 +101,7 @@ class AuthController extends Controller
 
         try {
             $credentials = [
-                'email' => $request->email,
+                'username' => $request->username,
                 'password' => $request->password
             ];
     
