@@ -10,7 +10,7 @@
                 <div :class="{'form-group form-group-default': true, 'mb-0': errors.has('login-form.email') }">
                     <label>Login <span>*</span></label>
                     <div class="controls">
-                        <input v-validate="'required|email'" class="form-control" type="email" name="email" v-model="form.email" placeholder="Email Address">
+                        <input v-validate="'required'" class="form-control" type="text" name="usename" v-model="form.usename" placeholder="Email Address">
                     </div>
                 </div>
                 <span v-show="errors.has('login-form.email')" class="help is-danger">{{ errors.first('login-form.email') }}</span>
